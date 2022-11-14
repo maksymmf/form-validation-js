@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Task 2.4</title>
+</head>
+
+<body>
+    <main>
+        <form id="form">
+            <h1 class="head">Create Account</h1>
+            <div class="name">
+                <div class="first-n">
+                    <label for="username"><span class="label-text">First name *</span></label>
+                    <input type="text" name="first-n" id="username" placeholder="enter your first name"
+                        data-required="firstName">
+                </div>
+                <div class="second-name">
+                    <label for="second-n"><span class="label-text">Last name</span></label>
+                    <input type="text" name="second-n" id="second-n" placeholder="enter your last name">
+                </div>
+            </div>
+            <div class="email-address">
+                <label for="email"><span class="label-text">Email *</span></label>
+                <input type="email" name="useremail" id="email" placeholder="enter your email" data-required="email">
+            </div>
+            <div class="pas">
+                <div class="userpass">
+                    <label for="userpas"><span class="label-text">Password *</span></label>
+                    <input type="password" name="userpass" id="userpas" placeholder="enter your password"
+                        data-required="password">
+                </div>
+                <div class="pas-confirm">
+                    <label for="userconfirm"><span class="label-text">Confirm password *</span></label>
+                    <input type="password" name="confirmuserpass" id="userconfirm"
+                        placeholder="enter your password again" data-required="passwordConfirm">
+                </div>
+            </div>
+            <div class="gend-hobb">
+                <div class="gender">
+                    <span class="label-text">Gender</span>
+                    <div class="radioboxes">
+                        <label for="male">
+                            <input type="radio" name="gender" id="male" value="male"><span class="txt">Male</span>
+                        </label>
+                        <label for="female">
+                            <input type="radio" name="gender" id="female" value="female"><span class="txt">Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="hobbies">
+                    <span class="label-text">Hobbies</span>
+                    <div class="checkboxes">
+                        <label for="music">
+                            <input type="checkbox" name="music" id="music" value="yes"><span class="txt">Music</span>
+                        </label>
+                        <label for="sports">
+                            <input type="checkbox" name="sports" id="sports" value="yes"><span class="txt">Sports</span>
+                        </label>
+                        <label for="travel">
+                            <input type="checkbox" name="travel" id="travel" value="yes"><span class="txt">Travel</span>
+                        </label>
+                        <label for="movies">
+                            <input type="checkbox" name="movies" id="movies" value="yes"><span class="txt">Movies</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="income">
+                <div class="src-inc">
+                    <span class="label-text">Source of Income</span>
+                    <select name="workstatus">
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+                <div class="inc">
+                    <label for="income"><span class="label-text">Income</span></label>
+                    <div class="range">
+                        <input type="range" id="income" min="1" max="20" value="20"><a class="btn-20k" href="">20K</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-age">
+                <div class="image">
+                    <label for="image"><span class="label-text">Upload profile picture</span></label>
+                    <input type="file" name="profpic" id="image">
+                </div>
+                <div class="age">
+                    <label for="age"><span class="label-text">Age</span></label>
+                    <input type="text" name="age" id="age" placeholder="18">
+                </div>
+            </div>
+            <div class="bio">
+                <label for="bio"><span class="label-text">Bio</span></label>
+                <textarea name="bio" id="bio" rows="6"></textarea>
+            </div>
+            <button type="submit" class="create-btn">Create</button>
+        </form>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

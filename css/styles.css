@@ -1,0 +1,222 @@
+body main .image-age, body main .income .range, body main .income, body main .gend-hobb .checkboxes, body main .gend-hobb .radioboxes, body main .gend-hobb, body main .pas, body main .name {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 50%;
+}
+@media (max-width: 719px) {
+  body main .image-age, body main .income .range, body main .income, body main .gend-hobb .checkboxes, body main .gend-hobb .radioboxes, body main .gend-hobb, body main .pas, body main .name {
+    flex-direction: column;
+  }
+}
+body main .image-age ::placeholder, body main .income .range ::placeholder, body main .income ::placeholder, body main .gend-hobb .checkboxes ::placeholder, body main .gend-hobb .radioboxes ::placeholder, body main .gend-hobb ::placeholder, body main .pas ::placeholder, body main .name ::placeholder {
+  color: rgba(93, 94, 97, 0.5);
+}
+
+body main .bio, body main .image-age .age, body main .image-age .image, body main .income .inc, body main .income .src-inc, body main .gend-hobb .hobbies, body main .gend-hobb .gender, body main .pas .pas-confirm, body main .pas .userpass, body main .email-address, body main .name .second-name, body main .name .first-n {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  margin: 12px;
+}
+@media (max-width: 719px) {
+  body main .bio, body main .image-age .age, body main .image-age .image, body main .income .inc, body main .income .src-inc, body main .gend-hobb .hobbies, body main .gend-hobb .gender, body main .pas .pas-confirm, body main .pas .userpass, body main .email-address, body main .name .second-name, body main .name .first-n {
+    margin: 6px;
+  }
+}
+body main .bio ::placeholder, body main .image-age .age ::placeholder, body main .image-age .image ::placeholder, body main .income .inc ::placeholder, body main .income .src-inc ::placeholder, body main .gend-hobb .hobbies ::placeholder, body main .gend-hobb .gender ::placeholder, body main .pas .pas-confirm ::placeholder, body main .pas .userpass ::placeholder, body main .email-address ::placeholder, body main .name .second-name ::placeholder, body main .name .first-n ::placeholder {
+  color: rgba(93, 94, 97, 0.5);
+}
+
+* {
+  font-family: "Helvetica Neue", "Arial Nova", sans-serif;
+}
+
+body {
+  background-color: #22577E;
+  display: flex;
+  justify-content: center;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+}
+body main form {
+  padding: 25px;
+}
+body main form .error-frame {
+  box-shadow: 0 0 5px red;
+}
+body main form .error-message {
+  color: red;
+  font-size: 1rem;
+}
+@media (max-width: 480px) {
+  body main form .error-message {
+    font-size: 0.85rem;
+  }
+}
+body main .head {
+  background-color: rgba(208, 211, 212, 0.399);
+  padding: 25px;
+  margin: -25px -25px 15px -25px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1.5px solid rgba(208, 211, 212, 0.399);
+  color: #5d5e61;
+  font-size: 2.3em;
+  text-align: center;
+}
+@media (max-width: 719px) {
+  body main .head {
+    font-size: 1.5rem;
+  }
+}
+body main .label-text {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #03bc9d;
+}
+@media (max-width: 719px) {
+  body main .label-text {
+    font-size: 1.2rem;
+  }
+}
+body main .gend-hobb {
+  flex-direction: row;
+}
+body main .gend-hobb .txt {
+  color: #5d5e61;
+  font-size: 1.1rem;
+}
+@media (max-width: 719px) {
+  body main .gend-hobb .txt {
+    font-size: 1rem;
+  }
+}
+body main .income .range {
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main .income .btn-20k {
+  color: #F7F7F7;
+  background-color: #03bc9d;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.3em;
+  border-radius: 7px;
+}
+body main .income input[type=range] {
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+}
+body main .income input[type=range]::-webkit-slider-runnable-track {
+  background: rgba(93, 94, 97, 0.501);
+  height: 8px;
+  border-radius: 5px;
+}
+body main .income input[type=range]::-moz-range-track {
+  background: rgba(93, 94, 97, 0.501);
+  height: 8px;
+  border-radius: 5px;
+}
+body main .income input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  margin-top: -6px;
+  background: #F7F7F7;
+  border: 1.5px solid rgba(93, 94, 97, 0.5);
+  border-radius: 50%;
+}
+body main .image-age .image input {
+  border: none;
+}
+body main .image-age .image input[type=file] {
+  padding-left: 0;
+  font-size: 0.75rem;
+}
+body main .image-age .image input[type=file]::-webkit-file-upload-button {
+  border-radius: 5px;
+  width: 40%;
+  font-size: 1em;
+  padding: 7px 10px 7px 4px;
+  background-color: #F7F7F7;
+  border: 1px solid rgba(93, 94, 97, 0.5);
+}
+body main .image-age .age ::placeholder {
+  color: #5d5e61;
+}
+body main .create-btn {
+  display: flex;
+  align-self: flex-end;
+  color: rgba(238, 238, 238, 0.802);
+  background-color: #03bc9d;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  border-radius: 7px;
+  margin: 20px 12px 0 auto;
+  border: none;
+}
+@media (max-width: 719px) {
+  body main .create-btn {
+    font-size: 1.2rem;
+    margin-right: 6px;
+  }
+}
+body main button[type=submit] {
+  cursor: pointer;
+  transition: background-color 1s;
+}
+body main button[type=submit]:hover {
+  background-color: rgba(3, 188, 157, 0.51);
+}
+body input,
+body option,
+body textarea {
+  border-radius: 5px;
+  padding: 12px 12px 7px 12px;
+  border: 1.5px solid rgba(93, 94, 97, 0.274);
+  margin-top: 12px;
+}
+body textarea {
+  resize: none;
+}
+body input[type=text],
+body input[type=email],
+body input[type=password],
+body textarea {
+  font-family: "Helvetica Neue", "Arial Nova", sans-serif;
+  font-size: 1.2em;
+  font-weight: light;
+  color: rgba(0, 0, 0, 0.798);
+  padding: 5px 8px 7px;
+}
+@media (max-width: 719px) {
+  body input[type=text],
+body input[type=email],
+body input[type=password],
+body textarea {
+    font-size: 1rem;
+  }
+}
+body select {
+  border-radius: 5px;
+  border: 1.5px solid rgba(93, 94, 97, 0.274);
+  padding: 5px;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.798);
+}
+@media (max-width: 719px) {
+  body select {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

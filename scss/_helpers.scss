@@ -1,0 +1,31 @@
+//extends
+@import 'breakpoints';
+
+%row-blocks {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 50%;
+
+    @include sm {
+        flex-direction: column;
+    }
+
+    & ::placeholder {
+        color: rgba(93, 94, 97, 0.5);
+    }
+}
+
+%column-blocks {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin: 12px;
+
+    @include sm {
+        margin: 6px;
+    }
+
+    & ::placeholder {
+        color: rgba(93, 94, 97, 0.5);
+    }
+}
